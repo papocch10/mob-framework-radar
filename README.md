@@ -1,12 +1,11 @@
 # mob-framework-radar
 
-**Mob**ile **Framework Radar** is a tool that allows you to easily detect the mobile development framework of the mobile application it takes in input.
+**Mob**ile **Framework Radar** is a tool that allows you to easily detect the cross-platform framework of the mobile application it takes in input. Furthermore, it detects if the app contains some security libraries (e.g. RootBeer, IOSSecuritySuite, etc.)
 
 ## Overview
 
-Discovering the technologies of an application is one of the first steps to perform during the security analysis of a mobile application because once the development framework has been identified, it is possible to focus on the analysis of critical files of the specific framework identified.
-For example, in Xamarin apps the logical part of the code is inside the DLL files, in Flutter apps the logical part is inside libapp.so, etc.
-Therefore, this tool can be useful during the initial reverse engineering phase of the app to quickly recognize the framework and then proceed with the security analysis based on the identified framework.
+Nowadays, with the increase of cross-platform and hybrid apps, it becomes important to be able to identify the development framework of a mobile application during a security analysis because once you have identified the development framework, you can focus on the analysis of specific files or platform-specific vulnerabilities based on the framework that has been identified.
+Therefore, this tool can be useful during the initial reverse engineering phase of the app to quickly recognize the cross-platform framework and then proceed with the security analysis based on the identified framework.
 
 
 ## Usage
@@ -24,13 +23,16 @@ optional arguments:
 ![Screenshot of mob-framework-radar](/images/screenshot.png)
 
 
-## Supported frameworks
+## Supported frameworks / 
 
-Currently mob-framework-radar is able to identify the following frameworks on Android/iOS apps:
+Currently mob-framework-radar is able to identify the following frameworks/platforms/references on Android/iOS applications:
 - Flutter
 - Cordova
 - React Native
 - Xamarin
 - Capacitor
-- Expo
+- Expo Platform
+- Uno Platform 
+- Security libraries ([RootBeer](https://github.com/scottyab/rootbeer), [IOSSecuritySuite](https://github.com/securing/IOSSecuritySuite), [freeRASP](https://github.com/talsec/Free-RASP-Community))
+
 
